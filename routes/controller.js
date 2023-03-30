@@ -1,7 +1,8 @@
 
 const express = require("express");
 const router = express.Router();
-const User = require('../models.js');
+const User = require('../models/user.js');
+const Song = require('../models/song.js');
 router.use(express.json());
 const jwt = require('jsonwebtoken');
 const secretKey = require('../config.js');
